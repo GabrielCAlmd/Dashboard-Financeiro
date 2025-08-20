@@ -54,18 +54,31 @@ O objetivo é fornecer uma visão clara e dinâmica para auxiliar na tomada de d
 
   - **Outros:** Docker, Git
 
-<pre>📂 Estrutura do Projeto
-📦 dashboard-financeiro
-├── 📁 assets             # Imagens, CSS e arquivos estáticos
-├── 📁 data               # Arquivos CSV/Excel
-├── 📁 src
-│   ├── app.py            # Arquivo principal da aplicação
-│   ├── data_processing.py # Funções de tratamento de dados
-│   ├── charts.py         # Criação dos gráficos
-│   └── config.py         # Configurações do projeto
-├── requirements.txt      # Dependências do projeto
-├── Dockerfile            # Configuração Docker
-└── README.md             # Documentação</pre>
+<pre>📦 dashboard-financeiro
+├── 📁 backend                # Parte em Python (API + lógica de dados)
+│   ├── 📁 data               # Arquivos CSV/Excel
+│   ├── 📁 src
+│   │   ├── app.py            # API principal (FastAPI ou Flask)
+│   │   ├── data_processing.py # Funções de tratamento de dados
+│   │   ├── charts.py         # Criação dos gráficos (opcional: gerar dados e enviar p/ frontend)
+│   │   └── config.py         # Configurações do projeto
+│   ├── requirements.txt      # Dependências Python
+│   ├── Dockerfile            # Docker para backend
+│   └── README.md
+│
+├── 📁 frontend               # Parte em React + Vite + Tailwind (interface)
+│   ├── 📁 public             # Arquivos estáticos (favicon, etc.)
+│   ├── 📁 src
+│   │   ├── App.jsx           # Componente principal
+│   │   ├── main.jsx          # Ponto de entrada do React
+│   │   ├── index.css         # Tailwind base
+│   │   └── components/       # Botões, gráficos, tabelas, etc.
+│   ├── package.json          # Dependências JS
+│   ├── vite.config.js        # Configuração do Vite
+│   └── tailwind.config.js    # Configuração do Tailwind
+│
+└── README.md                 # Documentação geral do projeto
+</pre>
 
 ## 📸 Demonstração
 
