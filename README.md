@@ -15,6 +15,10 @@ Este projeto consiste em um **Dashboard Interativo para análise** de dados fina
  - Comparação de períodos
 
  - Distribuição por categorias
+   
+ - Visualização da Bolsa de valores
+   
+ - Comparação de investimentos e dividendos
 
 O objetivo é fornecer uma visão clara e dinâmica para auxiliar na tomada de decisões financeiras.
 
@@ -33,6 +37,8 @@ O objetivo é fornecer uma visão clara e dinâmica para auxiliar na tomada de d
 ## 🛠️ Tecnologias Utilizadas
 
  - **Linguagem:** Python
+   
+ - **Frontend (UI/UX):** React + Tailwind
 
  - **Bibliotecas:**
 
